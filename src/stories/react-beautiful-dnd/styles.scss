@@ -1,0 +1,68 @@
+.react-beautiful-dnd {
+  h3 {
+    margin-left: 10px;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 20px;
+    margin-right: 20px;
+    // padding: 0 10px;
+    transition: background-color 0.3s;
+    width: 150px;
+  }
+
+  .task-list {
+    flex-grow: 1;
+    min-height: 100px;
+    padding: 10px 10px 0;
+
+    &.drag {
+      background-color: skyblue;
+    }
+  }
+
+  .task {
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    // padding: 10px;
+    padding: 5px 10px;
+
+    &.drag {
+      background-color: rgba(128, 128, 128, 0.3);
+    }
+    // &.drop {
+    //   background-color: rgba(128, 128, 128, 0.1);
+    // }
+  }
+
+  // .task {
+  //   align-items: center;
+  //   border: 1px solid red;
+  //   border-radius: 7px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   padding: 10px;
+  // }
+
+  .handle {
+    background-color: orange;
+    border-radius: 100px;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+}
